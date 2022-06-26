@@ -30,7 +30,7 @@ const app = async (yargsObj) => {
             console.log("TV show deleted");
 
         } else if (yargsObj.update){
-            await updateFilm({title:yargsObj.update}, {title: yargsObj.title, seasons: yargsObj.seasons, rating: yargsObj.rating});
+            await updateTvshow({title:yargsObj.update}, {title: yargsObj.title, seasons: yargsObj.seasons, rating: yargsObj.rating});
             console.log(await listTvshows());
 
         } else {

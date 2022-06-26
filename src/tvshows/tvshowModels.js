@@ -7,11 +7,13 @@ const tvshowSchema = new mongoose.Schema({
         required: true,
     },
     seasons:{
+        type: Number,
         required: false,
 
 
     },
     rating: {
+        type: Number,
         required: false,
 
 
